@@ -52,7 +52,7 @@ if __name__ == '__main__':
     model = network.BimanualActionPredictionNetwork(node_initial_dim=node_initial_dim, node_dim=node_feature_dim, edge_dim=edge_feature_dim, num_layers=num_layers, hidden_dim=hidden_dim, num_transform_layers=num_transform_layers, num_classes = num_classes)
     model.to(device)
     
-    data_root = './data_sliced/'
+    data_root = './data/'
     train_data_length = 32
     test_data_length = 6
 
