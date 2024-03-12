@@ -22,6 +22,10 @@ data
 
 It contains the features (bboxes for all object), edge_indices (edges between objects in the graph we introduced in paper), i3d features (scene features in the paper), lh_labels (action labels for left hand), and rh_labels (action labels for right hand) for both training set and testing set.
 
+## Environment preparation
+We provide the `environment.yml` file to help you set up the environment easily. Please change the `prefix` to your anaconda location.
+* run `conda env create -f environment.yml`
+
 ## Training and testing DuHa
 To simplify the process, we use one script `main.py` to automatically train and test DuHa. We test DuHa after each epoch. In the HA-ViD, the videos have `front`, `side` and `top` views, are denoted as `M0` `S1` and `S2` respectively. To run the script `main.py`, please specify the `view` and `data_root` where you hold the data.
 * run `python main.py --view M0 --data_root ./data/`
